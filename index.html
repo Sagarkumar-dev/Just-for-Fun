@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just For Fun</title>
+</head>
+<body>
+    <h1>A message to someone special</h1>
+    <p>You just have to write "yes" or "no" in small letters.</p>
+    <button onclick="myFunction()">Click Me</button>
+    <script>
+        function myFunction(){
+        var answer = prompt("Do You Want To Enter In My Heart?");
+        if (answer === "yes") {
+           document.write("I have sent you a lot of kisses...");
+           for(var i=0; i<=2000; i++ ){
+                document.write("<span>&#128139;</span>");
+           }
+        } else if (answer === "no") {
+            document.write("you broke my heart...");
+            for(var i=0; i<=2000; i++ ){
+                document.write("<span>&#128148;</span>");
+           }
+        } else {
+            alert("you will have to answer that question you can not leave it blank")
+        }
+}
+    </script>
+</body>
+</html>
